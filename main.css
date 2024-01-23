@@ -1,3 +1,17 @@
-ul {
-    
+@font-face {
+    font-family: satoshi;
+    src: url(Fonts/Satoshi/OTF/Satoshi-Regular.otf);
+}
+
+@font-face {
+    font-family: cabinet;
+    src: url(Fonts/Cabinet/OTF/CabinetGrotesk-Regular.otf);
+}
+
+header {
+    font-family: satoshi;
+}
+
+main {
+    font-family: satoshi;
 }
