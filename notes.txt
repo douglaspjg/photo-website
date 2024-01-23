@@ -1,0 +1,17 @@
+The most structure is <html> </html>. All the content (visible and not)
+will go in html tag.
+
+You have two sections in the html tag:
+    - Head (invisible, but this is where you put
+      information about the website)
+    - Body (this is the visible portion of the website)
+        - Footer (where you put things like contacts
+          or copyright)
+
+Then, the main section of the visible part of the website has to
+come in between the <main> and </main? tags. You can have elements
+like paragraphs (p),headers of various sizes (h1, h2, etc.), links
+(a), lists (ul for unordered and ol for ordered) (within lists you
+have list items (li)), images (img src=), and importantly, you can
+group them together in order to make styling easier with
+<div> </div>s!
