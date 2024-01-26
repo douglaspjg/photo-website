@@ -1,3 +1,6 @@
+/*******************************************************************************/
+/***                                FONTS                                    ***/
+/*******************************************************************************/
 @font-face {
     font-family: satoshi-reg;
     src: url(Fonts/Satoshi/OTF/Satoshi-Regular.otf);
@@ -18,32 +21,44 @@
     src: url(Fonts/Ranade/OTF/Ranade-Regular.otf);
 }
 
+/*******************************************************************************/
+/***                                GENERAL                                  ***/
+/*******************************************************************************/
 * {
     font-family: satoshi-reg;
+    text-rendering: optimizeLegibility;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    background-color:#FAFAF9;
 }
 
 header {
-    font-family: satoshi-light;
+    font-family: cabinet;
     font-size: 22px;
-}
-
-h1 {
-    font-size: 48px;
-    color: #007aff;
-    letter-spacing: 1px;
+    font-weight: 50;
 }
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
-/********************************* Nav Bar ***************************************/
+ul li {
+    list-style: none;
+}
+
+/*******************************************************************************/
+/***                                NAV BAR                                  ***/
+/*******************************************************************************/
 
     .nav-section {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 60px;
+        padding: 36px;
+        /* background-color: aqua; */
     }
 
     .logo {
@@ -51,37 +66,63 @@ a {
         justify-content: center;
         align-items: center;
         font-size: 32px;
+        font-weight: 800;
+        cursor: pointer;
+        /* background-color: brown; */
+        color: #007aff;
     }
 
-    nav.buttons {
+    nav.right-side {
         display: flex;
         justify-content: flex-end;
-        background-color: yellow;
+        /* background-color:coral; */
         padding: 4px;
-        flex-grow: 1;
         max-width: 800px;
+        max-height: 43px;
     }
 
-    ul.buttons-list {
+    /********************************* Page Buttons ***************************************/
+    ul.page-buttons, ul.socials-buttons {
         display: flex;
         flex-grow: 1;
-        background-color: yellowgreen;
-        padding: 0px;
+        /* background-color: yellowgreen; */
         justify-content: space-around;
-        margin: 0px;
+        font-size: 18px;
+        font-stretch: expanded;
     }
 
-    ul.buttons-list > li {
+    ul.page-buttons li, ul.socials-buttons li {
         display: flex;
-        list-style-type: none;
-        background-color: darkmagenta;
-        margin: 18px;
-        padding: 0px;
+        /* background-color: darkmagenta; */
+        align-items: center;
     }
 
-    ul.buttons-list > a {
-        display: block;
-        align-content: center;
+    ul.page-buttons li a, ul.socials-buttons li a {
+        display: flex;
         width: 100%;
         height: 100%;
+        transition: all 0.1s ease 0s;
+        /* background-color: deeppink; */
+        padding: 9px 12px;
+        align-items: center;
+    }
+
+    ul.page-buttons li a:hover, ul.socials-buttons li a:hover {
+        color: #007aff;
+    }
+
+    /********************************* Socials Buttons ***************************************/
+    
+    ul.socials-buttons li a i {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: all 0.1s ease 0s;
+        /* background-color: deeppink; */
+        padding: 9px 12px;
+        align-items: center;
+    }
+
+    ul.socials-buttons li a i:hover {
+        color: #007aff;
     }

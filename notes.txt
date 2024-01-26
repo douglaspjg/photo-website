@@ -15,3 +15,18 @@ like paragraphs (p),headers of various sizes (h1, h2, etc.), links
 have list items (li)), images (img src=), and importantly, you can
 group them together in order to make styling easier with
 <div> </div>s!
+
+
+To do:
+  - Take things out of the ul and just rely on padding to separate top buttons
+
+- Header
+    - Logo (img)
+    - nav__links (ul)
+        - li
+            - a
+        - li
+            - a
+        - li
+            - a
+    - cta (a)
