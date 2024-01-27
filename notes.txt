@@ -16,17 +16,13 @@ have list items (li)), images (img src=), and importantly, you can
 group them together in order to make styling easier with
 <div> </div>s!
 
-
-To do:
-  - Take things out of the ul and just rely on padding to separate top buttons
-
-- Header
-    - Logo (img)
-    - nav__links (ul)
-        - li
-            - a
-        - li
-            - a
-        - li
-            - a
-    - cta (a)
+TODO:
+  - Definitely change fonts for nav bar and website.
+  - Make a mood board?
+  - Touch up navbar later
+  - Figure out how to display pictures
+  - Figure out how to keep nav bar at the top even when you scroll down
+  - Figure out how to make a scroll-able picture display like the one on the Kyoto 2023 Website
+  - Broaden your understanding of git
+  - Actually learn what JSON is
+  - Wireframe the website out. What would I want the user to see first, and how to get from one page to the next?
