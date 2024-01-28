@@ -1,0 +1,89 @@
+/*******************************************************************************/
+/***                                FONTS                                    ***/
+/*******************************************************************************/
+@font-face {
+    font-family: general-sans-bold;
+    src: url(fonts/General-Sans/OTF/GeneralSans-Bold.otf)
+}
+
+@font-face {
+    font-family: general-sans-reg;
+    src: url(fonts/General-Sans/OTF/GeneralSans-Regular.otf)
+}
+
+/*******************************************************************************/
+/***                                BODY                                     ***/
+/*******************************************************************************/
+h2 {
+    font-family: general-sans-bold;
+    font-size: 34;
+}
+
+.project-title {
+    display: flex;
+    justify-content: flex-start;
+    padding: 32px 64px;
+}
+
+.paragraphs {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    padding: 0px 64px;
+}
+
+p {
+    line-height: 41.6px;
+    margin: 11px 0px;
+}
+
+/*******************************************************************************/
+/***                                FOOTER                                   ***/
+/*******************************************************************************/
+footer {
+    font-family: general-sans-reg;
+    display: flex;
+    justify-content: space-around;
+    padding: 32px;
+    align-items: center;
+    background-color: #E8E8E2;
+}
+
+/* Applies to all paragraphs in footer, but in foot-left and foot-right*/
+footer p {
+    font-size: 14px;
+    margin: 0px;
+    text-align: center;
+    background-color: inherit;
+}
+
+.foot-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: inherit;
+}
+
+footer h3 {
+    /* This is for the text "Douglas Pineda Gutierrez */
+    font-family: general-sans-bold;
+    padding: 8px;
+    background-color: inherit;
+}
+
+.email {
+    /* This simply fixes a weird spacing issue in the left side of the footer*/
+    margin: -11px;
+    background-color: inherit;
+}
+
+.foot-right {
+    max-width: 440px;
+    background-color: inherit;
+    padding-top: 12px;
+}
+
+.foot-right  p {
+    line-height: 32px;
+    background-color: inherit;
+}
