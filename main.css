@@ -7,6 +7,11 @@
 }
 
 @font-face {
+    font-family: satoshi-medium;
+    src: url(Fonts/Satoshi/OTF/Satoshi-Medium.otf);
+}
+
+@font-face {
     font-family: cabinet;
     src: url(Fonts/Cabinet/OTF/CabinetGrotesk-Regular.otf);
 }
@@ -78,6 +83,7 @@ ul li {
         justify-content: space-around;
         font-size: 18px;
         font-stretch: expanded;
+        margin: 24px;
     }
 
     ul.page-buttons li, ul.socials-buttons li {
@@ -95,6 +101,16 @@ ul li {
         padding: 9px 12px;
         align-items: center;
         color: #666666;
+    }
+
+    ul.page-buttons li a {
+        font-family: satoshi-medium;
+    }
+
+    ul.socials-buttons li a i {
+        font-weight: 600;
+        font-size: 24px;
+        margin: 2px;
     }
 
     ul.page-buttons li a:hover, ul.socials-buttons li a i:hover {
