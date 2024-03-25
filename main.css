@@ -53,34 +53,43 @@ ul li {
         align-items: center;
         padding: 36px;
         /* background-color: aqua; */
+        position: relative;
     }
 
-    .logo {
+    .left-side {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        /* background-color:coral; */
+        padding: 4px;
+        max-width: 400px;
+        max-height: 43px;
+    }
+    
+    .logo {
+        text-align: center;
         font-family: general-sans-bold;
         font-size: 32px;
         font-weight: 800;
         cursor: pointer;
         /* background-color: brown; */
+        /* position: absolute; */
+        align-self: center;
+        transform: translateX(-50%);
     }
 
-    nav.right-side {
+    .right-side {
         display: flex;
         justify-content: flex-end;
         /* background-color:coral; */
         padding: 4px;
-        max-width: 800px;
+        max-width: 400px;
         max-height: 43px;
     }
 
     /********************************* Page Buttons ***************************************/
+
     ul.page-buttons, ul.socials-buttons {
         display: flex;
-        flex-grow: 1;
-        /* background-color: yellowgreen; */
-        justify-content: space-around;
         font-size: 18px;
         font-stretch: expanded;
         margin: 24px;

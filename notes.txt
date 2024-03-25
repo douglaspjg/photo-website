@@ -19,7 +19,8 @@ group them together in order to make styling easier with
 TODO:
   - Definitely change fonts for nav bar and website.
   - Make a mood board?
-  - Touch up navbar later
+  - Touch up navbar:
+       - Spacing
   - Figure out how to display pictures
   - Figure out how to keep nav bar at the top even when you scroll down
   - Figure out how to make a scroll-able picture display like the one on the Kyoto 2023 Website
@@ -27,3 +28,42 @@ TODO:
   - Actually learn what JSON is
   - Wireframe the website out. What would I want the user to see first, and how to get from one page to the next?
   - Make it so that hovering over the a element for the nav buttons makes the actual text elements change color.
+
+
+
+
+
+
+
+
+
+
+
+  TypoSort(A) { 
+    for [i = 0 to (A.length - 1)] {
+      for [j = 0 to (A.length - 1)] {
+        if (A[i] <= A[j]) {
+          swap A[i], A[j]
+        }
+      }
+    }
+  }
+
+
+
+  Goes through the entire array from left to right
+  i = 0 {
+
+    j = 0 {
+      first_element <= first_element? {
+        yes, so swap the first element with itself. This is the base case.
+      }
+    }
+
+    j = 1 {
+      first_element <= second_element? {
+        
+      }
+    }
+
+  }
