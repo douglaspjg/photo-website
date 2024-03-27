@@ -28,10 +28,12 @@ TODO:
   - Actually learn what JSON is
   - Wireframe the website out. What would I want the user to see first, and how to get from one page to the next?
   - Make it so that hovering over the a element for the nav buttons makes the actual text elements change color.
+  - The top navigation bar doesn't compress to the screen size on mobile, but everything else does beautifully
+  - Load times are incredibly slow for pictures, unusably so
 
 
 
-
+Made an edit here
 
 
 
