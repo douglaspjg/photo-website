@@ -16,7 +16,7 @@
 /*******************************************************************************/
     h2 {
         font-family: general-sans-bold;
-        font-size: 34;
+        font-size: 34px;
     }
 
     .project-title {
@@ -40,19 +40,60 @@
     /*******************************************************************************/
     /***                                CAROUSEL                                 ***/
     /*******************************************************************************/
-        .images-list {
+
+        .carousel {
+            /* align-self: center; */
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            padding: 0px 64px;
+            height: 50vh;
         }
 
-        .images-list li {
+        .carousel > button {
+            display: block;
+        }
+
+        .image-and-description-section {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+            flex-grow: 1;
+            align-self: stretch;
+        }
+
+        .slide-list {
+            flex-grow: 1;
+            align-self: stretch;
+        }
+
+        .image-descriptions-list {
+            display: block;
+            /* align-self: stretch; */
         }
     
-        .image {
-            width: 50%;
-            height: 50%;
+        .slide {
+            display: inline;
+            position: absolute;
+            opacity: 0;
+        }
+
+        .slide > img {
+            display: block;
+            width: 100%
+        }
+
+
+        .slide[current], .image-description[current] {
+            opacity: 1;
+        }
+
+        .image-description {
+            position: absolute;
+            opacity: 0;
         }
 
     /*******************************************************************************/

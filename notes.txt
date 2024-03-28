@@ -35,6 +35,10 @@ TODO:
 
 Made an edit here
 
+For the carousel, you have to:
+  - be able to select the active slide from the list of all slides
+  - be able to
+
 
 
 
