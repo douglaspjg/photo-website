@@ -30,6 +30,7 @@ TODO:
   - Make it so that hovering over the a element for the nav buttons makes the actual text elements change color.
   - The top navigation bar doesn't compress to the screen size on mobile, but everything else does beautifully
   - Load times are incredibly slow for pictures, unusably so
+  - Give the paragrpahs section a max width
 
 
 
@@ -41,15 +42,19 @@ inline-blocks all the way down to the image?
 
 Or you could do it top up. I say bottom down
 
-I think for the squarespace website, everything inside of the carousel
-container is locked relative to each other in size and position, and
-the only thing that determines the final position would be the size
-of the outer carousel
-    - This might actually be wrong, because if you look at the
-      size of the images themselves, they all share the same aspect
-      ratio (so they're definitely being cropped, unless the
-      pictures I chose happened to all have the exact same aspect
-      ratio)
-    - Therefore, I think what's actually happening is that there is
-      a container that houses each card slide, and the image is
-      fitting to that. I want this container to be the 
+I think what's actually happening is that there is
+a container that houses each card slide, and the image is
+fitting to that with either width 100% or height 100% if it
+is a portrait picture
+
+. I want this container to be the slide list,
+which I will give dimensions to. But image-and-description-container
+contains slide-list, so I guess I'll give that the property that
+it fits to just contain slide list and image descriptions. So here,
+the only thing I need to do is convert the slide list from UL to div,
+give and get rid of the li's, and then give the images width and
+height 100% (which means 100% of slides list). Then, I will make the
+image-and-description-section a vertical flex box, which should have
+the behavior I want. The last thing I need to do is figure out how to
+get the entire thing to stay centered with respect to the paragraphs
+section above it.

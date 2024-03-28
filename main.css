@@ -54,6 +54,7 @@ ul li {
         padding: 36px;
         /* background-color: aqua; */
         position: relative;
+        width: 100vw;
     }
 
     .left-side {
