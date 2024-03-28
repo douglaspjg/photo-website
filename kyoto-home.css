@@ -14,6 +14,12 @@
 /*******************************************************************************/
 /***                                BODY                                     ***/
 /*******************************************************************************/
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
     h2 {
         font-family: general-sans-bold;
         font-size: 34px;
@@ -26,6 +32,7 @@
     }
 
     .paragraphs {
+        flex-shrink: 0;
         display: flex;
         flex-direction: column;
         align-items: space-around;
@@ -40,60 +47,57 @@
     /*******************************************************************************/
     /***                                CAROUSEL                                 ***/
     /*******************************************************************************/
-
+        .carousel-wrapper {
+            flex-shrink: calc();
+        }
         .carousel {
-            /* align-self: center; */
+            /* Display flex makes the buttons and images behave like a
+            horizontal sandwich */
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
+            /* Padding to match the paragraph section above */
             padding: 0px 64px;
-            height: 50vh;
-        }
-
-        .carousel > button {
-            display: block;
-        }
-
-        .image-and-description-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-end;
-            position: relative;
-            flex-grow: 1;
-            align-self: stretch;
-        }
-
-        .slide-list {
-            flex-grow: 1;
-            align-self: stretch;
-        }
-
-        .image-descriptions-list {
-            display: block;
-            /* align-self: stretch; */
-        }
-    
-        .slide {
-            display: inline;
-            position: absolute;
-            opacity: 0;
+            max-height: 600px;
+            flex-shrink: calc();
         }
 
         .slide > img {
-            display: block;
-            width: 100%
+            /* Ensure the image fits inside the container */
+            max-width: 100%; /* Set the maximum width of the image to 100% of the container's width */
+            max-height: 100%; /* Set the maximum height of the image to 100% of the container's height */
+            /* Optional: Prevent the image from stretching */
+
+            /* width: auto;
+            height: auto; */
+        }
+        .image-and-description-section {
+            display: flex;
+            flex-direction: column;
+            height: auto;
         }
 
+        .image-descriptions-list {
+            /* This is to  center thr text within its container */
+            text-align: center;
+        }
+
+        .slide-list {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+            max-height: 100%;
+        }
+
+        .slide {
+            width: 80%;
+            max-height: 100%;
+        }
+
+        .slide, .image-description {
+            display: none;
+        }
 
         .slide[current], .image-description[current] {
-            opacity: 1;
-        }
-
-        .image-description {
-            position: absolute;
-            opacity: 0;
+            display: block;
         }
 
     /*******************************************************************************/
@@ -106,6 +110,9 @@
             padding: 32px;
             align-items: center;
             background-color: #E8E8E2;
+            bottom: 0;
+            width: 100%;
+            flex-shrink: 0;
         }
 
         /* Applies to all paragraphs in footer, but in foot-left and foot-right*/

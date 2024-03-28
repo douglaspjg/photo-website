@@ -33,43 +33,23 @@ TODO:
 
 
 
-Made an edit here
+You want the slide to take the shape of the image inside of it,
+and the slide list to take the shape of the slide inside of it.
 
-For the carousel, you have to:
-  - be able to select the active slide from the list of all slides
-  - be able to
+You could maybe do this from the top down, where you use
+inline-blocks all the way down to the image?
 
+Or you could do it top up. I say bottom down
 
-
-
-
-
-
-  TypoSort(A) { 
-    for [i = 0 to (A.length - 1)] {
-      for [j = 0 to (A.length - 1)] {
-        if (A[i] <= A[j]) {
-          swap A[i], A[j]
-        }
-      }
-    }
-  }
-
-
-
-  Goes through the entire array from left to right
-  i = 0 {
-
-    j = 0 {
-      first_element <= first_element? {
-        yes, so swap the first element with itself. This is the base case.
-      }
-    }
-
-    j = 1 {
-      first_element <= second_element? {
-        
-      }
-    }
-
-  }
+I think for the squarespace website, everything inside of the carousel
+container is locked relative to each other in size and position, and
+the only thing that determines the final position would be the size
+of the outer carousel
+    - This might actually be wrong, because if you look at the
+      size of the images themselves, they all share the same aspect
+      ratio (so they're definitely being cropped, unless the
+      pictures I chose happened to all have the exact same aspect
+      ratio)
+    - Therefore, I think what's actually happening is that there is
+      a container that houses each card slide, and the image is
+      fitting to that. I want this container to be the 
