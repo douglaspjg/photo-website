@@ -103,25 +103,25 @@
             particularly Machiya that have been recently renovated and repurposed.
           </p>
         </div>
-            <div class="carousel">
-              <button class="left button">&#10094;</button>
+            <div class="carousel" data-carousel>
+              <button class="left button" data-carousel-button="prev">&#10094;</button>
               <div class="image-and-description-section"> 
-                <div class="slide-list">
-                    <img src="pictures/Compressed/kinkakuji.JPG" alt="" class="slide" current>
-                    <img src="pictures/Compressed/arashiyama.JPG" alt="" class="slide">
+                <div class="slide-list" data-slides>
+                    <img src="pictures/Compressed/kinkakuji.JPG" alt="" class="slide" data-current>
+                    <img src="pictures/Compressed/arashiyama.JPG" alt="" class="slide" >
                     <img src="pictures/Compressed/tenryuji.JPG" alt="" class="slide">
                     <img src="pictures/Compressed/ninenzaka.JPG" alt="" class="slide">
                     <img src="pictures/Compressed/kyoto-station new.jpg" alt="" class="slide">
                 </div>    
                 <ul class="image-descriptions-list">
-                  <li class="image-description" current > kinkakuji </li>
-                  <li class="image-description"> arashiyama </li>
+                  <li class="image-description" data-current> kinkakuji </li>
+                  <li class="image-description" > arashiyama </li>
                   <li class="image-description"> tenryuji </li>
                   <li class="image-description"> ninenzaka </li>
                   <li class="image-description"> kyoto station </li>
                 </ul>
               </div>
-              <button class="right button">&#10095;</button>
+              <button class="right button" data-carousel-button="next" >&#10095;</button>
             </div>
         <footer>
           <div class="foot-left">
@@ -138,6 +138,6 @@
           </div>
         </footer>
       </main>
-      <script src="kyoto-home.js"></script>
+      <script src="kyoto-home.js" defer></script>
     </body>
 </html>

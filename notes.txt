@@ -31,6 +31,23 @@ TODO:
   - The top navigation bar doesn't compress to the screen size on mobile, but everything else does beautifully
   - Load times are incredibly slow for pictures, unusably so
   - Give the paragrpahs section a max width
+    - This is basically fully functional besides one case:
+      - when zooming in, the image decides the size of slides-list,
+        which then bulges out of carousel and extends the contents
+        past the window after zooming into 150%.
+          - Therefore, I need to find a way to make the image
+            shrink when ...
+              - basically, if there is overflow, I want to compress
+                the contents of the container to the containers
+                dimensions. 
+              - but in any case, I don't like the size of 600
+                in any case besides 100% zoom on a laptop, but
+                am struggling to figure out how to dynamically
+                size an image to fit the available dimensions
+  - Now you have the nav-bar as fixed to the top of the screen.
+    This causes some issues because some things are hidden
+    under it (the top bits of each screen, like titles and stuff).
+    Fix that
 
 
 

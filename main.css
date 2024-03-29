@@ -31,7 +31,7 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    background-color:#FAFAF9;
+    background-color: #FAFAF9;
     color: #262626;
 }
 
@@ -47,84 +47,90 @@ ul li {
 /***                                NAV BAR                                  ***/
 /*******************************************************************************/
 
-    .nav-section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 36px;
-        /* background-color: aqua; */
-        position: relative;
-        width: 100vw;
-    }
+.nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px;
+    /* background-color: aqua; */
+    position: fixed;
+    width: 100vw;
+    z-index: 500;
+    left: 0;
+}
 
-    .left-side {
-        display: flex;
-        justify-content: flex-start;
-        /* background-color:coral; */
-        padding: 4px;
-        max-width: 400px;
-        max-height: 43px;
-    }
-    
-    .logo {
-        text-align: center;
-        font-family: general-sans-bold;
-        font-size: 32px;
-        font-weight: 800;
-        cursor: pointer;
-        /* background-color: brown; */
-        /* position: absolute; */
-        align-self: center;
-        transform: translateX(-50%);
-    }
+.left-side {
+    display: flex;
+    justify-content: flex-start;
+    /* background-color:coral; */
+    padding: 4px;
+    max-width: 400px;
+    max-height: 43px;
+}
 
-    .right-side {
-        display: flex;
-        justify-content: flex-end;
-        /* background-color:coral; */
-        padding: 4px;
-        max-width: 400px;
-        max-height: 43px;
-    }
+.logo {
+    text-align: center;
+    font-family: general-sans-bold;
+    font-size: 32px;
+    font-weight: 800;
+    cursor: pointer;
+    /* background-color: brown; */
+    /* position: absolute; */
+    align-self: center;
+    transform: translateX(-50%);
+}
 
-    /********************************* Page Buttons ***************************************/
+.right-side {
+    display: flex;
+    justify-content: flex-end;
+    /* background-color:coral; */
+    padding: 4px;
+    max-width: 400px;
+    max-height: 43px;
+}
 
-    ul.page-buttons, ul.socials-buttons {
-        display: flex;
-        font-size: 18px;
-        font-stretch: expanded;
-        margin: 24px;
-    }
+/********************************* Page Buttons ***************************************/
 
-    ul.page-buttons li, ul.socials-buttons li {
-        display: flex;
-        /* background-color: darkmagenta; */
-        align-items: center;
-    }
+ul.page-buttons,
+ul.socials-buttons {
+    display: flex;
+    font-size: 18px;
+    font-stretch: expanded;
+    margin: 24px;
+}
 
-    ul.page-buttons li a, ul.socials-buttons li a i {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        transition: all 0.1s ease 0s;
-        /* background-color: deeppink; */
-        padding: 9px 12px;
-        align-items: center;
-        color: #666666;
-    }
+ul.page-buttons li,
+ul.socials-buttons li {
+    display: flex;
+    /* background-color: darkmagenta; */
+    align-items: center;
+}
 
-    ul.page-buttons li a {
-        font-family: satoshi-medium;
-    }
+ul.page-buttons li a,
+ul.socials-buttons li a i {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: all 0.1s ease 0s;
+    /* background-color: deeppink; */
+    padding: 9px 12px;
+    align-items: center;
+    color: #666666;
+}
 
-    ul.socials-buttons li a i {
-        font-weight: 600;
-        font-size: 24px;
-        margin: 2px;
-    }
+ul.page-buttons li a {
+    font-family: satoshi-medium;
+}
 
-    ul.page-buttons li a:hover, ul.socials-buttons li a i:hover {
-        color: #B6D89B;
-    }
+ul.socials-buttons li a i {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 2px;
+}
 
-    /********************************* Socials Buttons ***************************************/
+ul.page-buttons li a:hover,
+ul.socials-buttons li a i:hover {
+    color: #B6D89B;
+}
+
+/********************************* Socials Buttons ***************************************/
