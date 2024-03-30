@@ -55,8 +55,9 @@ ul li {
     /* background-color: aqua; */
     position: fixed;
     width: 100vw;
-    z-index: 500;
+    z-index: 30;
     left: 0;
+    top: 0;
 }
 
 .left-side {
@@ -75,9 +76,7 @@ ul li {
     font-weight: 800;
     cursor: pointer;
     /* background-color: brown; */
-    /* position: absolute; */
-    align-self: center;
-    transform: translateX(-50%);
+    transform: translateX(-10%);
 }
 
 .right-side {
