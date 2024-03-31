@@ -150,8 +150,14 @@ ul.socials-buttons li a i:hover,
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
-    width: 50vw;
-    transform: translateX(50%);
     font-size: 18px;
+    margin-top: 200px;
+}
+
+.two {
+    margin-top: 8px;
+}
+
+a.temp-message:hover {
+    color: #B6D89B;
 }
