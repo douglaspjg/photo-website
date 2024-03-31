@@ -25,7 +25,6 @@
 /***                                GENERAL                                  ***/
 /*******************************************************************************/
 * {
-    font-family: satoshi-reg;
     text-rendering: optimizeLegibility;
     padding: 0;
     margin: 0;
@@ -33,6 +32,14 @@
     box-sizing: border-box;
     background-color: #FAFAF9;
     color: #262626;
+}
+
+body {
+    margin-top: 115.2px;
+}
+
+main {
+    font-family: satoshi-reg;
 }
 
 a {
@@ -74,7 +81,6 @@ ul li {
     font-family: general-sans-bold;
     font-size: 32px;
     font-weight: 800;
-    cursor: pointer;
     /* background-color: brown; */
     transform: translateX(-10%);
 }
@@ -117,6 +123,11 @@ ul.socials-buttons li a i {
     color: #666666;
 }
 
+.logo p {
+    transition: all 0.1s ease 0s;
+    padding: 9px 12px;
+}
+
 ul.page-buttons li a {
     font-family: satoshi-medium;
 }
@@ -128,8 +139,19 @@ ul.socials-buttons li a i {
 }
 
 ul.page-buttons li a:hover,
-ul.socials-buttons li a i:hover {
+ul.socials-buttons li a i:hover,
+.logo :hover {
     color: #B6D89B;
+    cursor: pointer;
 }
 
-/********************************* Socials Buttons ***************************************/
+/********************************* Page Contents ***************************************/
+.temp-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 50vw;
+    transform: translateX(50%);
+    font-size: 18px;
+}
