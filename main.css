@@ -59,6 +59,8 @@ ul li {
     justify-content: space-between;
     align-items: center;
     padding: 36px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     /* background-color: aqua; */
     position: fixed;
     width: 100vw;
@@ -147,18 +149,66 @@ ul.socials-buttons li a i:hover,
 
 /********************************* Page Contents ***************************************/
 .temp-message {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    text-align: center;
     font-size: 18px;
-    margin-top: 200px;
     transition: all 0.135s ease 0s;
+    width: 50%;
+    transform: translateX(50%);
 }
 
+.one {
+    margin-top: 150px;
+}
 .two {
-    margin-top: 8px;
+    margin-top: 32px;
 }
 
 a.temp-message:hover {
     color: #B6D89B;
+}
+
+/*******************************************************************************/
+/***                                CAROUSEL                                 ***/
+/*******************************************************************************/
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px;
+    max-width: 1440px;
+    width: auto;
+    flex: 1;
+    margin-top: 64px;
+}
+
+.image-and-description-section {
+    height: 550px;
+    margin: 32px;
+    margin-top: 0px;
+}
+
+button {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.slide-list {
+    height: 550px;
+}
+
+#indexDisplay {
+    display: block;
+    text-align: center;
+    margin: 16px 0px;
+    font-size: 14px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide[data-current] {
+    display: block;
+    height: 100%;
+    width: auto;
 }

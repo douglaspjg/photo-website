@@ -48,6 +48,11 @@ TODO:
     This causes some issues because some things are hidden
     under it (the top bits of each screen, like titles and stuff).
     Fix that
+  - Eventually make the text captions undernreath the carousel on
+    the Kyoto page highlight-able
+  - Figure out how to fix the nav section height difference
+  - Learn how to make a scroll-able landing section for the kyoto home
+    page to make it more of an exprience (or not?)
 
 
 
