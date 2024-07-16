@@ -190,6 +190,11 @@ a.temp-message:hover {
 button {
     font-size: 1.4rem;
     cursor: pointer;
+    transition: all 0.135s ease 0s;
+}
+
+button:hover {
+    color: #B6D89B;
 }
 
 .slide-list {
